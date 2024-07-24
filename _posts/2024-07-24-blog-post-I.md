@@ -1,13 +1,15 @@
 # How is a proper language generated?
 This is a blog based on the paper Language Generation with Limit :)
 ![NLG](https://phrazor.ai/assets/img/nlg/NLG-workflow.png "NLG")
+As we know that the most popular way of langauge generation nowadays is by using the LLMs. In this way, people actually developed a stochastics model under the neural network. With an increasing witness
+of the actual strings from the adversary, the accurency of string predication increases as well. We need to emphasize that the generation needs to product distinct strings.
+## The Gold-Angluin model: An negative intuition
 Sometimes in the theorical exploration,  we can transfer the defination "language" to a more simple way of operation, a set of potential strings. 
 This is as well the motivation of Gold - Angluin model.  
 **Identification:** if there is a after $𝑡^∗$, such that $𝑡^∗$, the guess of $𝐾=𝐿_𝑖$is correct.
 
 **Generation:** if there is a $𝑡^∗$, such that after $𝑡^∗$, where 𝑆_𝑡 denotes the sequence presented by the adversary until 𝑡, the output of the algorithm always belongs to $𝐾−𝑆_𝑡$.
 
-## The Gold-Angluin model: An negative intuition
 They have a initial idea which is we a universal set $U$ that contains all the possible elelments. And the collections $C$ contains the countable subsets of $U$, ${L_1,L_2,L_3,...}$
 They proved that the task of identification is impossible. We can give a quick example of this conclusion:
 ### The framework
@@ -87,7 +89,9 @@ Algorithm got illustrated by the previous concept closure.
 Above here is basically the content from the paper Language Generation with Limit.
 
 ## Further concern in practical concerning
+The result form the paper was developed form very strong assumption which is they required the collection of subsets of universal set U to be countable. In the practical situation, it is better to remove this requirement,(under the condition of Areph 1 would be more practical)
 
+In natural language case, is the algorithm still effective and powerful for analytic language (Like Chinese) as well as the common research object synthetic language (Like most Latin Languages) after semantics? What about LLMs?
 
 However, I could quest the result from the paper by a counter example. 
 
