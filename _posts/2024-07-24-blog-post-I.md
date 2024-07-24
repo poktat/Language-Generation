@@ -83,11 +83,11 @@ Shaded rows represent strings already produced (e.g., u8 is shaded only in Step 
 
 Starting with m = m(0)t, the algorithm finds the highest-indexed (t, m)-critical language Lnt(m) in Ct and searches for a new string in Lnt(m), with the critical language possibly changing as m increases.
 
-In Step 1, the algorithm generates an arbitrary string.   
-In Step 2, starting with m(0)t = 5, it tests strings in L2 until finding u7 at m = 7.   
-In Step 3, starting with m(0)t = 8, it searches in L3 and finds u10 at m = 10.   
-In Step 4, starting with m(0)t = 10, L4 is consistent but not (t, 10)-critical (since L4[10] ⊄ L3[10]), so L3 remains the highest-indexed (t, 10)-critical language. The algorithm searches for the next um ∈ L3, finding u12 at m = 12.   
-In Step 5, starting with m(0)t = 12, L5 is the highest-indexed (t, 12)-critical language (since L5[12] ⊆ L3[12] and L2[12]). The algorithm searches for the next um ∈ L5. At m = 14, L5 is no longer (t, 14)-critical (since L5[14] ⊄ L3[14]), so L3 becomes the highest-indexed (t, 14)-critical language. The search continues for the next um ∈ L3, finding u15 at m = 15.   
+**In Step 1**, the algorithm generates an arbitrary string.   
+**In Step 2**, starting with m(0)t = 5, it tests strings in L2 until finding u7 at m = 7.   
+**In Step 3**, starting with m(0)t = 8, it searches in L3 and finds u10 at m = 10.   
+**In Step 4**, starting with m(0)t = 10, L4 is consistent but not (t, 10)-critical (since L4[10] ⊄ L3[10]), so L3 remains the highest-indexed (t, 10)-critical language. The algorithm searches for the next um ∈ L3, finding u12 at m = 12.   
+**In Step 5**, starting with m(0)t = 12, L5 is the highest-indexed (t, 12)-critical language (since L5[12] ⊆ L3[12] and L2[12]). The algorithm searches for the next um ∈ L5. At m = 14, L5 is no longer (t, 14)-critical (since L5[14] ⊄ L3[14]), so L3 becomes the highest-indexed (t, 14)-critical language. The search continues for the next um ∈ L3, finding u15 at m = 15.   
 
 Algorithm got illustrated by the previous concept "Closure‘.
 Two cases:  
