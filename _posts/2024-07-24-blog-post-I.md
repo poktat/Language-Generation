@@ -69,7 +69,6 @@ Here 𝐶_𝑛 denotes a finite collection of 𝐿_𝑖:{𝐿_1,𝐿_2,…, 𝐿
 An important fact that can be proved:
 There exists a time step 𝑡^+  such that for all 𝑡 ≥ 𝑡^+, the 
 language 𝐿_𝑧 is critical at step 𝑡.
-![image](https://github.com/user-attachments/assets/f08e3f7f-ced6-4254-889a-a860c0f30fa1)
 𝑈 denotes the set of all possible string set 𝑈 = {𝑢_1,𝑢_2,𝑢_3,…}, for simplicity, we sometimes treat 𝑢_𝑖 as 𝑖.
 Set 𝐿_𝑧 = 𝐾.
 Enumerated strings by step: 𝑤_1,𝑤_2,…
