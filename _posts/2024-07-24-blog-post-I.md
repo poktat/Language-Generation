@@ -110,7 +110,11 @@ Above here is basically the content from the paper Language Generation with Limi
 The result form the paper was developed form very strong assumption which is they required the collection of subsets of universal set U to be countable. In the practical situation, it is better to remove this requirement,(under the condition of Areph 1 would be more practical)
 ### Application difference for different Natural Language System
 In natural language case, is the algorithm still effective and powerful for analytic language (Like Chinese) as well as the common research object synthetic language (Like most Latin Languages) after semantics? What about LLMs?
-In the exploration 
+
+In the exploration, we can easily think of that this way of generation in the more complex practicing situation you need to do a lot of previous work on the semantic understanding and prompt of all the string candidates to achieve a meaningful natural language generation. Hidden compute costs could be a risk.
+
+However, for LLMs. We have 
+
 ### Efficiency Discussion
 For the efficiency discussion, I could quest the result from the paper by a counter example:
 
