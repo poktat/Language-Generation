@@ -1,3 +1,11 @@
+---
+title: "How is a proper language generated?"
+output:
+  html_document:
+    includes:
+      in_header: _header.html
+---
+
 # How is a proper language generated?
 This is a blog based on the paper Language Generation with Limit :)
 ![NLG](https://phrazor.ai/assets/img/nlg/NLG-workflow.png "NLG")
