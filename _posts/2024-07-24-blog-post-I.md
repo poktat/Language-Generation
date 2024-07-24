@@ -130,7 +130,8 @@ And the proof's from the paper is kind of not strong enough to make sure there i
 
 ## Basic Principle of what Transformers do
 ### Transformer Architecture Diagram
-
+Initial transformer:
+![transf](https://huggingface.co/datasets/huggingface-course/documentation-images/resolve/main/en/chapter1/transformers.svg)
 #### Components Explained:
 **Input Embedding:**  
 Converts input tokens (words or subwords) into dense vectors.  
