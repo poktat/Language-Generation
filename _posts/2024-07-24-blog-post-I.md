@@ -46,13 +46,12 @@ kind of "Closure". But it can also be seen that we can constructed an example wh
 This may leads to a final failure.
 ### The illustration of generation assisted by the concept of closure:
 An illustration of generation assisted by the concept of closure:
-𝐿_𝑖∈𝐶 is call consistent with 𝑆_𝑡 if 𝑆_𝑡 is the subset of 𝐿_𝑖, ⟨𝑆_𝑡 ⟩ 	denotes the intersection of all 𝐿_𝑖 that is consistent with 𝑆_𝑡 which 	we call it the closure by analogy.
-By intuition, it is safe to generate new strings from ⟨𝑆_𝑡 ⟩−𝑆.
-![image](https://github.com/user-attachments/assets/235a3a10-fa9b-4ca2-b258-0992af4ec260)
+𝐿_𝑖∈𝐶 is call consistent with 𝑆_𝑡 if 𝑆_𝑡 is the subset of 𝐿_𝑖, ⟨𝑆_𝑡 ⟩ denotes the intersection of all 𝐿_𝑖 that is consistent with 𝑆_𝑡 which 	we call it the closure by analogy.
+By intuition, it is safe to generate new strings from ⟨𝑆_𝑡⟩−𝑆.
 Denote 𝐿(𝑎, 𝑏, 𝑉)=𝑃_(𝑎,𝑏)∪𝑉 where 𝑉 is a finite set of integers. 𝐶 is the collection of all possible 𝐿 with this form.
 We claim that ⟨𝑆_𝑡 ⟩=𝑆_𝑡, because 𝑆_𝑡 might completely from the 𝑉. 
 This might cause a failure because the strings can not be generated from empty set.
-![image](https://github.com/user-attachments/assets/b4024fe2-cd18-4d60-95b4-9ba518cb4d5c)
+
 
 
 
