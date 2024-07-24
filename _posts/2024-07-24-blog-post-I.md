@@ -9,7 +9,7 @@ Sometimes in the theorical exploration,  we can transfer the defination "languag
 as simply any set of strings over a fixed alphabet; for example, the strings of the language could be the set of all grammatical sentences (or all well-formed expressions) according to a given grammar.
 This is as well the motivation of Gold - Angluin model.  
 **Identification:** after a time t, the guess of 𝐾 is correct.  
-**Generation:** if there is a time t, such that after that time t, where $S_t$ denotes the sequence presented by the adversary until t, the output of the algorithm always belongs to $K-S_t$.  
+**Generation:** if there is a time t, such that after that time t, where S_t denotes the sequence presented by the adversary until t, the output of the algorithm always belongs to $K-S_t$.  
 They have a initial idea which is we a universal set $U$ that contains all the possible elelments. And the collections $C$ contains the countable subsets of U, ${L_1,L_2,L_3,...}$
 They proved that the task of identification is impossible. We can give a quick example of this conclusion:
 ### The framework
@@ -53,11 +53,11 @@ This might cause a failure because the strings can not be generated from empty s
 
 ## Direct Hypothesis	
 Direct Hypothesis Enumeration:
-	The strategy here is to go through the collection $C={𝐿_1,𝐿_2, 𝐿_3,..}$, 
-	and treat each of them as the hypothesis, unless there is a string from $𝑆_𝑡$
-	doesn’t belong to the present $𝐿_𝑖$, move to the next.
+	The strategy here is to go through the collection C={𝐿_1,𝐿_2, 𝐿_3,..}, 
+	and treat each of them as the hypothesis, unless there is a string from 𝑆_𝑡
+	doesn’t belong to the present 𝐿_𝑖, move to the next.
 
-The failure here is while $𝐾=𝐿_𝑧$, if $𝑖<𝑧$ and $𝐿_𝑧⊊𝐿_𝑖$, while the adversary always presents elements from $𝐿_𝑧$, the algorithm would never move on to the next $𝐿_(𝑖+1)$.
+The failure here is while 𝐾=𝐿_𝑧, if 𝑖<𝑧 and 𝐿_𝑧⊊𝐿_𝑖, while the adversary always presents elements from 𝐿_𝑧, the algorithm would never move on to the next 𝐿_(𝑖+1).
 
 
 ## The main result from the paper
