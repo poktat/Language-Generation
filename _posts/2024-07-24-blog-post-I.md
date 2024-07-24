@@ -115,7 +115,7 @@ In the exploration, we can easily think of that this way of generation in the mo
 
 However, for LLMs. We have this comparison：
 
-![image](https://github.com/poktat/Language-Generation/blob/master/images/alg1.png "Algorithm Part II")
+![image](https://github.com/poktat/Language-Generation/blob/master/images/dif.png)
 
 
 
