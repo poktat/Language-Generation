@@ -45,10 +45,10 @@ Example of  arithmetic progression on integers：
   
 	  𝐶 should be the collection of them all.
 Example of  arithmetic progression:
-	𝐼[𝑎,𝑏] denotes every integer of the interval [𝑎,𝑏].
-	We enumerate 𝑈 by stages of positive integer counter 𝑠 with increment step 1:
-		Begin with 𝐼[−𝑠, 𝑗(𝑠)] where 𝑗(𝑠) denotes some increasing positive integer.
-		Each time the algorithm guesses 𝐾=𝑃_(−𝑠,1) switch to the next stage of 𝑠+1
+𝐼[𝑎,𝑏] denotes every integer of the interval [𝑎,𝑏].
+We enumerate 𝑈 by stages of positive integer counter 𝑠 with increment step 1:
+Begin with 𝐼[−𝑠,𝑗(𝑠)] where 𝑗(𝑠) denotes some increasing positive integer.
+Each time the algorithm guesses 𝐾=𝑃_(−𝑠,1) switch to the next stage of 𝑠+1
 Actually, we choose 𝐾=𝑄_0,1, but the algorithm would never guess correctly.
 
 
@@ -108,8 +108,9 @@ Above here is basically the content from the paper Language Generation with Limi
 
 ## Further concern in practical concerning
 The result form the paper was developed form very strong assumption which is they required the collection of subsets of universal set U to be countable. In the practical situation, it is better to remove this requirement,(under the condition of Areph 1 would be more practical)
-
+### Application difference for different Natural Language System
 In natural language case, is the algorithm still effective and powerful for analytic language (Like Chinese) as well as the common research object synthetic language (Like most Latin Languages) after semantics? What about LLMs?
+In the exploration 
 ### Efficiency Discussion
 For the efficiency discussion, I could quest the result from the paper by a counter example:
 
