@@ -130,11 +130,11 @@ And the proof's from the paper is kind of not strong enough to make sure there i
 **Input Embedding:**
 
 Converts input tokens (words or subwords) into dense vectors.
+
 **Positional Encoding:**
-
 Adds positional information to the embeddings to retain the order of tokens.
-**Encoder:**
 
+**Encoder:**
 **Self-Attention Mechanism:** Computes attention scores to capture relationships between tokens.
 **Feed-Forward Neural Network:** Processes the output of the self-attention mechanism.
 Layer Normalization & Residual Connections: Applied after each sub-layer to stabilize training.
