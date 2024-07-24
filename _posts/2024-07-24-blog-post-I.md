@@ -115,7 +115,7 @@ In the exploration, we can easily think of that this way of generation in the mo
 
 However, for LLMs. We have this comparison of analytic languages and synthetic languages：
 
-![image](https://github.com/poktat/Language-Generation/blob/master/images/dif.png)
+![image](https://github.com/poktat/Language-Generation/blob/master/images/77.png)
 
 
 
