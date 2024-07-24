@@ -57,7 +57,13 @@ This might cause a failure because the strings can not be generated from empty s
 
 
 ## Direct Hypothesis	
-![image](https://github.com/user-attachments/assets/62ffe52d-3a84-41d3-9916-7445d25da013)
+Direct Hypothesis Enumeration:
+	The strategy here is to go through the collection $C={𝐿_1,𝐿_2, 𝐿_3,..}$, 
+	and treat each of them as the hypothesis, unless there is a string from $𝑆_𝑡$
+	doesn’t belong to the present $𝐿_𝑖$, move to the next.
+
+The failure here is while $𝐾=𝐿_𝑧$, if $𝑖<𝑧$ and $𝐿_𝑧⊊𝐿_𝑖$, while the adversary always presents elements from $𝐿_𝑧$, the algorithm would never move on to the next $𝐿_(𝑖+1)$.
+
 
 ## The main result from the paper
 Firstly, define the concept of critical language:
