@@ -158,11 +158,11 @@ Produces the final prediction, often through a softmax layer to generate probabi
 ### Track the probability model working
 In the context of transformers, the probability model is typically associated with the final output layer of the model. Here’s a detailed explanation of where and how the probability model fits into the architecture:
 
-Location of the Probability Model
-Output Layer:
-Softmax Layer: The probability model is implemented here. After the decoder generates logits (raw predictions), the softmax function converts these logits into probabilities. The softmax function ensures that the output values are in the range [0, 1] and sum up to 1, making them interpretable as probabilities.
-Detailed Breakdown
-Decoder Output:
+#### Location of the Probability Model
+**Output Layer:**
+**Softmax Layer:** The probability model is implemented here. After the decoder generates logits (raw predictions), the softmax function converts these logits into probabilities. The softmax function ensures that the output values are in the range [0, 1] and sum up to 1, making them interpretable as probabilities.
+#### Detailed Breakdown
+**Decoder Output:**
 
 After processing through multiple layers of self-attention and feed-forward networks in the decoder, the final representation is generated. This output can be seen as a high-dimensional vector for each token position in the sequence.
 Linear Transformation:
@@ -173,14 +173,14 @@ Softmax Function:
 The logits are then passed through a softmax function to convert them into probabilities. The softmax function computes the exponential of each logit, normalizes these values, and outputs a probability distribution over the vocabulary for each position in the sequence.
 
 #### Explanation
-Linear Transformation: The dense layer at the end of the decoder transforms the high-dimensional decoder output into logits corresponding to the vocabulary size.
+**Linear Transformation:** The dense layer at the end of the decoder transforms the high-dimensional decoder output into logits corresponding to the vocabulary size.
 
-Softmax: This function converts logits into a probability distribution. Each position in the output sequence has a vector of probabilities representing the likelihood of each token in the vocabulary being the next token.
+**Softmax**: This function converts logits into a probability distribution. Each position in the output sequence has a vector of probabilities representing the likelihood of each token in the vocabulary being the next token.
 
-Training and Generation
-Training: During training, the model is optimized to minimize the difference between the predicted probability distribution and the actual target tokens using loss functions like cross-entropy loss.
+#### Training and Generation
+**Training:** During training, the model is optimized to minimize the difference between the predicted probability distribution and the actual target tokens using loss functions like cross-entropy loss.
 
-Generation: During inference, the probabilities are used to generate tokens. Techniques like greedy decoding, beam search, or sampling can be employed to generate the final sequence from these probabilities.
+**Generation:** During inference, the probabilities are used to generate tokens. Techniques like greedy decoding, beam search, or sampling can be employed to generate the final sequence from these probabilities.
 
 This output layer with the softmax function is where the probability model resides, providing a probabilistic interpretation of the model's predictions.
 
