@@ -12,7 +12,8 @@ This is a blog based on the paper Language Generation with Limit :)
 As we know that the most popular way of langauge generation nowadays is by using the LLMs. In this way, people actually developed a stochastics model under the neural network. With an increasing witness
 of the actual strings from the adversary, the accurency of string predication increases as well. We need to emphasize that the generation needs to product distinct strings.
 ## The Gold-Angluin model: An negative intuition
-Sometimes in the theorical exploration,  we can transfer the defination "language" to a more simple way of operation, a set of potential strings. 
+Sometimes in the theorical exploration,  we can transfer the defination "language" to a more simple way of operation. We will formalize the definition of a language more precisely below, but for now we can think of a language
+as simply any set of strings over a fixed alphabet; for example, the strings of the language could be the set of all grammatical sentences (or all well-formed expressions) according to a given grammar.
 This is as well the motivation of Gold - Angluin model.  
 **Identification:** if there is a after $𝑡^∗$, such that $𝑡^∗$, the guess of $𝐾=𝐿_𝑖$is correct.
 
@@ -105,7 +106,9 @@ The result form the paper was developed form very strong assumption which is the
 
 In natural language case, is the algorithm still effective and powerful for analytic language (Like Chinese) as well as the common research object synthetic language (Like most Latin Languages) after semantics? What about LLMs?
 
-However, I could quest the result from the paper by a counter example. 
+However, I could quest the result from the paper by a counter example:
+Here we use the example from regular number(both countable and infinite).
+
 
 
 
