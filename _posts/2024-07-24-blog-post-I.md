@@ -25,7 +25,6 @@ The framework allows us to do membership query for 𝐿_𝑖 but not for 𝐾.
 
 ### Example of arithmetic progression on integers:
 Example of  arithmetic progression on integers:
-
 	  𝑃_(𝑎,𝑏) defined as all integers in the form of :
 		{𝑎+𝑏𝑖:𝑖=0, 1, 2,…} 
 	  𝑄_(𝑎,𝑏) defined as all integers in the “bidirectional” form of :
