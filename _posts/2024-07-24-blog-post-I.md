@@ -107,10 +107,11 @@ The result form the paper was developed form very strong assumption which is the
 
 In natural language case, is the algorithm still effective and powerful for analytic language (Like Chinese) as well as the common research object synthetic language (Like most Latin Languages) after semantics? What about LLMs?
 
-However, I could quest the result from the paper by a counter example: 
-Here we use the example from regular number(both countable and infinite). We set the true set to be all the regular number in the interval [0,2],  while the enunmeration of the sets by accident to be the sequence like this: 
+However, I could quest the result from the paper by a counter example:
+
+Here we use the example from regular number(both countable and infinite). We set the true set to be all the regular number in the interval [0,2],  while the collection of the blur sets by accident to be the sequence like this: 
 [-1,1], [-2,1], [-3,1]... 
-The adversary
+The adversary shell keep enumerating the regular number of [0,1] in some order, and the counter counts from 0 to the negative infinite direction, then after some step t the algorithm should keep generating new string from [-1,1] by the algorithm, which is a failure comparing to our goal.   
 
 
 
