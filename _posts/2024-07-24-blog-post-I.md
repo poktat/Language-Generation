@@ -8,10 +8,8 @@ of the actual strings from the adversary, the accurency of string predication in
 Sometimes in the theorical exploration,  we can transfer the defination "language" to a more simple way of operation. We will formalize the definition of a language more precisely below, but for now we can think of a language
 as simply any set of strings over a fixed alphabet; for example, the strings of the language could be the set of all grammatical sentences (or all well-formed expressions) according to a given grammar.
 This is as well the motivation of Gold - Angluin model.  
-**Identification:** if there is a after $𝑡^∗$, such that $𝑡^∗$, the guess of $𝐾=𝐿_𝑖$is correct.
-
-**Generation:** if there is a $𝑡^∗$, such that after $𝑡^∗$, where 𝑆_𝑡 denotes the sequence presented by the adversary until 𝑡, the output of the algorithm always belongs to $𝐾−𝑆_𝑡$.
-
+**Identification:** if there is a after $𝑡^∗$, such that $𝑡^∗$, the guess of $𝐾=𝐿_𝑖$is correct.  
+**Generation:** if there is a $𝑡^∗$, such that after $𝑡^∗$, where 𝑆_𝑡 denotes the sequence presented by the adversary until 𝑡, the output of the algorithm always belongs to $𝐾−𝑆_𝑡$.  
 They have a initial idea which is we a universal set $U$ that contains all the possible elelments. And the collections $C$ contains the countable subsets of $U$, ${L_1,L_2,L_3,...}$
 They proved that the task of identification is impossible. We can give a quick example of this conclusion:
 ### The framework
@@ -28,15 +26,11 @@ In another word, the research here is kind  of a set theory game.
 
 ### Example of arithmetic progression on integers:
 Example of  arithmetic progression on integers：
-	  𝑃_(𝑎,𝑏) defined as all integers in the form of :
-   
-		$${𝑎+𝑏𝑖:𝑖=0, 1, 2,…}$$ 
-  
-	  𝑄_(𝑎,𝑏) defined as all integers in the “bidirectional” form of :
-   
+𝑃_(𝑎,𝑏) defined as all integers in the form of :
+		$${𝑎+𝑏𝑖:𝑖=0, 1, 2,…}$$
+𝑄_(𝑎,𝑏) defined as all integers in the “bidirectional” form of :   
 		$${𝑎+𝑏𝑖:𝑖= …,−2 ,−1, 0, 1, 2, …}$$ 
-  
-	  𝐶 should be the collection of them all.
+𝐶 should be the collection of them all.
 Example of  arithmetic progression:
 𝐼[𝑎,𝑏] denotes every integer of the interval [𝑎,𝑏].
 We enumerate 𝑈 by stages of positive integer counter 𝑠 with increment step 1:
