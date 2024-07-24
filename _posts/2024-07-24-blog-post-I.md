@@ -73,15 +73,15 @@ language 𝐿_𝑧 is critical at step 𝑡.
 Set 𝐿_𝑧 = 𝐾.
 Enumerated strings by step: 𝑤_1,𝑤_2,…
 𝐿_(𝑖 ) [𝑚] denotes 𝐿_𝑖∩{𝑢_1,𝑢_2,𝑢_3,…𝑢_𝑚}
-An extention definition: A language 𝐿_𝑛 is (𝑡, 𝑚)− critical if 𝐿_𝑛 is consistent with 𝑆_𝑡, and for every language 𝐿_𝑖 ∈ 𝐶_𝑛 such that 𝐿_𝑖 is consistent with St, we have $𝐿_𝑛 [𝑚] ⊆ 𝐿_𝑖 [𝑚]$.
-$𝑚_𝑡^((0))  =max⁡(𝑚_(𝑡−1), 𝑤_𝑡 )$
+An extention definition: A language 𝐿_𝑛 is (𝑡, 𝑚)− critical if 𝐿_𝑛 is consistent with 𝑆_𝑡, and for every language 𝐿_𝑖 ∈ 𝐶_𝑛 such that 𝐿_𝑖 is consistent with St, we have 𝐿_𝑛 [𝑚] ⊆ 𝐿_𝑖 [𝑚].
+𝑚_𝑡^((0))  =max⁡(𝑚_(𝑡−1), 𝑤_𝑡 )
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/alg2.png "Algorithm Part I")
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/alg1.png "Algorithm Part II")
 
 Algorithm got illustrated by the previous concept "Closure‘.
 Two cases:  
-Infinite Closure: With our sample of arithmetic progression, it is safe and easy.  
-Finite Closure: After the card of $⟨𝑆⟩$,this must be a string that can delete at least 1 potential candidate $𝐿_𝑖$  
+**Infinite Closure:** With our sample of arithmetic progression, it is safe and easy.  
+**Finite Closure:** After the card of $⟨𝑆⟩$,this must be a string that can delete at least 1 potential candidate 𝐿_𝑖  
 Above here is basically the content from the paper Language Generation with Limit.
 
 ## Further concern in practical concerning
