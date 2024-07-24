@@ -84,7 +84,8 @@ An extention definition: A language 𝐿_𝑛 is (𝑡, 𝑚)− critical if �
 5. **Select String**: If there is a string among those checked that belongs to the critical language but hasn't been produced yet, output this string and update the counter to the current value of m. If not, repeat the iteration.
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/alg2.png "Algorithm Part I")
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/alg1.png "Algorithm Part II")
-Figure 1 demonstrates the first five steps of the algorithm from Section 5 with a sample input. Strings u2, u5, u8, u10, and u12 are produced sequentially by the adversary. Each step is shown as a vertical column, and each string considered at some step is displayed as a row. An "X" indicates that string uj belongs to language Li.
+
+Figure demonstrates the first five steps of the algorithm from Section 5 with a sample input. Strings u2, u5, u8, u10, and u12 are produced sequentially by the adversary. Each step is shown as a vertical column, and each string considered at some step is displayed as a row. An "X" indicates that string uj belongs to language Li.
 
 Shaded rows represent strings already produced (e.g., u8 is shaded only in Step 3). In each step, the algorithm examines languages in Ct = {L1, L2, ..., Lt}, considering a finite prefix from m(0)t to mt, defining the column heights.
 
