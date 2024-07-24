@@ -127,24 +127,20 @@ And the proof's from the paper is kind of not strong enough to make sure there i
 ### Transformer Architecture Diagram
 
 #### Components Explained:
-**Input Embedding:**
-
-Converts input tokens (words or subwords) into dense vectors.
-
-**Positional Encoding:**
-Adds positional information to the embeddings to retain the order of tokens.
-
-**Encoder:**
-**Self-Attention Mechanism:** Computes attention scores to capture relationships between tokens.
-**Feed-Forward Neural Network:** Processes the output of the self-attention mechanism.
-Layer Normalization & Residual Connections: Applied after each sub-layer to stabilize training.
-**Decoder:**
-
-Masked Self-Attention Mechanism: Prevents attending to future tokens during training.
-Encoder-Decoder Attention: Allows the decoder to focus on relevant parts of the input sequence.
-Feed-Forward Neural Network: Processes the output from the attention mechanisms.
-Layer Normalization & Residual Connections: Applied similarly to the encoder.
-**Output Layer:**
+**Input Embedding:**  
+Converts input tokens (words or subwords) into dense vectors.  
+**Positional Encoding:**  
+Adds positional information to the embeddings to retain the order of tokens.  
+**Encoder:**  
+**Self-Attention Mechanism:** Computes attention scores to capture relationships between tokens.  
+**Feed-Forward Neural Network:** Processes the output of the self-attention mechanism.  
+Layer Normalization & Residual Connections: Applied after each sub-layer to stabilize training.  
+**Decoder:**  
+Masked Self-Attention Mechanism: Prevents attending to future tokens during training. 
+Encoder-Decoder Attention: Allows the decoder to focus on relevant parts of the input sequence.  
+Feed-Forward Neural Network: Processes the output from the attention mechanisms.  
+Layer Normalization & Residual Connections: Applied similarly to the encoder.  
+**Output Layer:**  
 
 Produces the final prediction, often through a softmax layer to generate probabilities over the vocabulary.
 
