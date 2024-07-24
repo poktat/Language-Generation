@@ -13,14 +13,10 @@ This is as well the motivation of Gold - Angluin model.
 They have a initial idea which is we a universal set $U$ that contains all the possible elelments. And the collections $C$ contains the countable subsets of U, ${L_1,L_2,L_3,...}$
 They proved that the task of identification is impossible. We can give a quick example of this conclusion:
 ### The framework
-A countable infinite collection of possible language candidates 𝐿_1,𝐿_2,𝐿_3,…
-
-𝑈 denotes the set of all possible elements.
-
-Each 𝐿_𝑖 contains infinite elements from 𝑈.
-
-𝐾 = 𝐿_𝑖 is the true language.
-
+A countable infinite collection of possible language candidates 𝐿_1,𝐿_2,𝐿_3,…  
+𝑈 denotes the set of all possible elements.  
+Each 𝐿_𝑖 contains infinite elements from 𝑈.  
+𝐾 = 𝐿_𝑖 is the true language.  
 The framework allows us to do membership query for 𝐿_𝑖 but not for 𝐾. 
 In another word, the research here is kind  of a set theory game.
 
