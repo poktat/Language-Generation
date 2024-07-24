@@ -107,6 +107,7 @@ Two cases:
 Above here is basically the content from the paper Language Generation with Limit.
 
 ## Further concern in practical concerning
+### Countable?
 The result form the paper was developed form very strong assumption which is they required the collection of subsets of universal set U to be countable. In the practical situation, it is better to remove this requirement,(under the condition of Areph 1 would be more practical)
 ### Application difference for different Natural Language System
 In natural language case, is the algorithm still effective and powerful for analytic language (Like Chinese) as well as the common research object synthetic language (Like most Latin Languages) after semantics? What about LLMs?
@@ -126,11 +127,62 @@ Here we use the example from regular number(both countable and infinite). We set
 [-1,1], [-2,1], [-3,1]... 
 The adversary shell keep enumerating the regular number of [0,1] in some order, and the counter counts from 0 to the negative infinite direction, then after some step t the algorithm should keep generating new string from [-1,1] by the algorithm, which is a failure comparing to our goal. 
 
-And the proof's from the paper is kind of not strong enough to make sure there is a finite stoping time to generate from the true language, but to generate from ite proper subset is useful. There comes another question, is the final practical result be able to produxe enough meaningful words  in the natural language processing.
+And the proof's from the paper is kind of not strong enough to make sure there is a finite stoping time to generate from the true language, but to generate from ite proper subset is useful. There comes another question, is the final practical result be able to produce enough meaningful words in the natural language processing.
 
 
+## Basic Principle of what Transformers do
+### Transformer Architecture Diagram
 
+Components Explained:
+Input Embedding:
 
+Converts input tokens (words or subwords) into dense vectors.
+Positional Encoding:
+
+Adds positional information to the embeddings to retain the order of tokens.
+Encoder:
+
+Self-Attention Mechanism: Computes attention scores to capture relationships between tokens.
+Feed-Forward Neural Network: Processes the output of the self-attention mechanism.
+Layer Normalization & Residual Connections: Applied after each sub-layer to stabilize training.
+Decoder:
+
+Masked Self-Attention Mechanism: Prevents attending to future tokens during training.
+Encoder-Decoder Attention: Allows the decoder to focus on relevant parts of the input sequence.
+Feed-Forward Neural Network: Processes the output from the attention mechanisms.
+Layer Normalization & Residual Connections: Applied similarly to the encoder.
+Output Layer:
+
+Produces the final prediction, often through a softmax layer to generate probabilities over the vocabulary.
+
+### Track the probability model working
+In the context of transformers, the probability model is typically associated with the final output layer of the model. Here’s a detailed explanation of where and how the probability model fits into the architecture:
+
+Location of the Probability Model
+Output Layer:
+Softmax Layer: The probability model is implemented here. After the decoder generates logits (raw predictions), the softmax function converts these logits into probabilities. The softmax function ensures that the output values are in the range [0, 1] and sum up to 1, making them interpretable as probabilities.
+Detailed Breakdown
+Decoder Output:
+
+After processing through multiple layers of self-attention and feed-forward networks in the decoder, the final representation is generated. This output can be seen as a high-dimensional vector for each token position in the sequence.
+Linear Transformation:
+
+The output vectors from the decoder are passed through a linear transformation (dense layer) to map them to the size of the vocabulary. This transformation produces logits, which are unnormalized scores for each token in the vocabulary.
+Softmax Function:
+
+The logits are then passed through a softmax function to convert them into probabilities. The softmax function computes the exponential of each logit, normalizes these values, and outputs a probability distribution over the vocabulary for each position in the sequence.
+
+#### Explanation
+Linear Transformation: The dense layer at the end of the decoder transforms the high-dimensional decoder output into logits corresponding to the vocabulary size.
+
+Softmax: This function converts logits into a probability distribution. Each position in the output sequence has a vector of probabilities representing the likelihood of each token in the vocabulary being the next token.
+
+Training and Generation
+Training: During training, the model is optimized to minimize the difference between the predicted probability distribution and the actual target tokens using loss functions like cross-entropy loss.
+
+Generation: During inference, the probabilities are used to generate tokens. Techniques like greedy decoding, beam search, or sampling can be employed to generate the final sequence from these probabilities.
+
+This output layer with the softmax function is where the probability model resides, providing a probabilistic interpretation of the model's predictions.
 
 
 
