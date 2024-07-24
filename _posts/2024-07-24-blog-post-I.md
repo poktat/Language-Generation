@@ -10,10 +10,10 @@ as simply any set of strings over a fixed alphabet; for example, the strings of 
 This is as well the motivation of Gold - Angluin model.  
 **Identification:** after a time t, the guess of 𝐾 is correct.  
 **Generation:** if there is a time t, such that after that time t, where $S_t$ denotes the sequence presented by the adversary until t, the output of the algorithm always belongs to $K-S_t$.  
-They have a initial idea which is we a universal set $U$ that contains all the possible elelments. And the collections $C$ contains the countable subsets of $U$, ${L_1,L_2,L_3,...}$
+They have a initial idea which is we a universal set $U$ that contains all the possible elelments. And the collections $C$ contains the countable subsets of U, ${L_1,L_2,L_3,...}$
 They proved that the task of identification is impossible. We can give a quick example of this conclusion:
 ### The framework
-A countable infinite collection of possible language candidates $𝐿_1,𝐿_2,𝐿_3,…$
+A countable infinite collection of possible language candidates 𝐿_1,𝐿_2,𝐿_3,…
 
 𝑈 denotes the set of all possible elements.
 
