@@ -84,6 +84,14 @@ Algorithm got illustrated by the previous concept closure.
   
 		Finite Closure: After the card of $⟨𝑆⟩$,this must be a string that can delete at least 1 potential candidate $𝐿_𝑖$
 
+Above here is basically the content from the paper Language Generation with Limit.
+
+## Further concern in practical concerning
+
+
+However, I could quest the result from the paper by a counter example. 
+
+
 
 
 
