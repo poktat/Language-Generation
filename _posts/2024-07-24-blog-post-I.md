@@ -46,7 +46,7 @@ kind of "Closure". But it can also be seen that we can constructed an example wh
 This may leads to a final failure.
 ### The illustration of generation assisted by the concept of closure:
 An illustration of generation assisted by the concept of closure:
-	𝐿_𝑖∈𝐶 is call consistent with 𝑆_𝑡 if 𝑆_𝑡 is the subset of 𝐿_𝑖, ⟨𝑆_𝑡 ⟩ 	denotes the intersection of all 𝐿_𝑖 that is consistent with 𝑆_𝑡 which 	we call it the closure by analogy.
+𝐿_𝑖∈𝐶 is call consistent with 𝑆_𝑡 if 𝑆_𝑡 is the subset of 𝐿_𝑖, ⟨𝑆_𝑡 ⟩ 	denotes the intersection of all 𝐿_𝑖 that is consistent with 𝑆_𝑡 which 	we call it the closure by analogy.
 By intuition, it is safe to generate new strings from ⟨𝑆_𝑡 ⟩−𝑆.
 ![image](https://github.com/user-attachments/assets/235a3a10-fa9b-4ca2-b258-0992af4ec260)
 Denote 𝐿(𝑎, 𝑏, 𝑉)=𝑃_(𝑎,𝑏)∪𝑉 where 𝑉 is a finite set of integers. 𝐶 is the collection of all possible 𝐿 with this form.
@@ -67,13 +67,13 @@ The failure here is while $𝐾=𝐿_𝑧$, if $𝑖<𝑧$ and $𝐿_𝑧⊊𝐿
 
 ## The main result from the paper
 Firstly, define the concept of critical language:
-	A language 𝐿_𝑛  is critical at step 𝑡 if 𝐿_𝑛 is consistent with 𝑆_𝑡, and 	for every language 𝐿_𝑖∈𝐶_𝑛 that is consistent with 𝑆_𝑡, we have 
-	𝐿_𝑛 ⊆ 𝐿_𝑖.
+A language 𝐿_𝑛  is critical at step 𝑡 if 𝐿_𝑛 is consistent with 𝑆_𝑡, and for every language 𝐿_𝑖∈𝐶_𝑛 that is consistent with 𝑆_𝑡, we have 
+𝐿_𝑛 ⊆ 𝐿_𝑖.
 Here 𝐶_𝑛 denotes a finite collection of 𝐿_𝑖:{𝐿_1,𝐿_2,…, 𝐿_𝑛}
 𝐿_𝑧 = 𝐾
 An important fact that can be proved:
-	 There exists a time step 𝑡^+  such that for all 𝑡 ≥ 𝑡^+, the 
-	 language 𝐿_𝑧 is critical at step 𝑡.
+There exists a time step 𝑡^+  such that for all 𝑡 ≥ 𝑡^+, the 
+language 𝐿_𝑧 is critical at step 𝑡.
 ![image](https://github.com/user-attachments/assets/f08e3f7f-ced6-4254-889a-a860c0f30fa1)
 𝑈 denotes the set of all possible string set 𝑈 = {𝑢_1,𝑢_2,𝑢_3,…}, for simplicity, we sometimes treat 𝑢_𝑖 as 𝑖.
 Set 𝐿_𝑧 = 𝐾.
