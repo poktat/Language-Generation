@@ -22,10 +22,10 @@ In another word, the research here is kind  of a set theory game.
 
 ### Example of arithmetic progression on integers:
 Example of  arithmetic progression on integers：
-𝑃_(𝑎,𝑏) defined as all integers in the form of :
-		$${𝑎+𝑏𝑖:𝑖=0, 1, 2,…}$$
-𝑄_(𝑎,𝑏) defined as all integers in the “bidirectional” form of :   
-		$${𝑎+𝑏𝑖:𝑖= …,−2 ,−1, 0, 1, 2, …}$$ 
+𝑃_(𝑎,𝑏) defined as all integers in the form of :   
+		$${𝑎+𝑏𝑖:𝑖=0, 1, 2,…}$$   
+𝑄_(𝑎,𝑏) defined as all integers in the “bidirectional” form of :    
+		$${𝑎+𝑏𝑖:𝑖= …,−2 ,−1, 0, 1, 2, …}$$    
 𝐶 should be the collection of them all.
 Example of  arithmetic progression:
 𝐼[𝑎,𝑏] denotes every integer of the interval [𝑎,𝑏].
