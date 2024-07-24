@@ -36,9 +36,13 @@ In another word, the research here is kind  of a set theory game.
 ### Example of arithmetic progression on integers:
 Example of  arithmetic progression on integers：
 	  𝑃_(𝑎,𝑏) defined as all integers in the form of :
+   
 		$${𝑎+𝑏𝑖:𝑖=0, 1, 2,…}$$ 
+  
 	  𝑄_(𝑎,𝑏) defined as all integers in the “bidirectional” form of :
+   
 		$${𝑎+𝑏𝑖:𝑖= …,−2 ,−1, 0, 1, 2, …}$$ 
+  
 	  𝐶 should be the collection of them all.
 Example of  arithmetic progression:
 	𝐼[𝑎,𝑏] denotes every integer of the interval [𝑎,𝑏].
@@ -111,7 +115,9 @@ However, I could quest the result from the paper by a counter example:
 
 Here we use the example from regular number(both countable and infinite). We set the true set to be all the regular number in the interval [0,2],  while the collection of the blur sets by accident to be the sequence like this: 
 [-1,1], [-2,1], [-3,1]... 
-The adversary shell keep enumerating the regular number of [0,1] in some order, and the counter counts from 0 to the negative infinite direction, then after some step t the algorithm should keep generating new string from [-1,1] by the algorithm, which is a failure comparing to our goal.   
+The adversary shell keep enumerating the regular number of [0,1] in some order, and the counter counts from 0 to the negative infinite direction, then after some step t the algorithm should keep generating new string from [-1,1] by the algorithm, which is a failure comparing to our goal. 
+
+And the proof's from the paper is kind of not strong enough to make sure there is a finite stoping time to generate from the true language, but to generate from ite proper subset is useful. There comes another question, is the final practical result be able to produxe enough meaningful words  in the natural language processing.
 
 
 
