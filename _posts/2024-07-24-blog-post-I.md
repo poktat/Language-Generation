@@ -113,7 +113,7 @@ In natural language case, is the algorithm still effective and powerful for anal
 
 In the exploration, we can easily think of that this way of generation in the more complex practicing situation you need to do a lot of previous work on the semantic understanding and prompt of all the string candidates to achieve a meaningful natural language generation. Hidden compute costs could be a risk.
 
-However, for LLMs. We have this comparison：
+However, for LLMs. We have this comparison of analytic languages and synthetic languages：
 
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/dif.png)
 
