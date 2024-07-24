@@ -79,12 +79,9 @@ $𝑚_𝑡^((0))  =max⁡(𝑚_(𝑡−1), 𝑤_𝑡 )$
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/alg1.png "Algorithm Part II")
 
 Algorithm got illustrated by the previous concept "Closure‘.
-Two cases:
- 
-	Infinite Closure: With our sample of arithmetic progression, it is safe and easy.
- 
-	Finite Closure: After the card of $⟨𝑆⟩$,this must be a string that can delete at least 1 potential candidate $𝐿_𝑖$
-
+Two cases:  
+Infinite Closure: With our sample of arithmetic progression, it is safe and easy.  
+Finite Closure: After the card of $⟨𝑆⟩$,this must be a string that can delete at least 1 potential candidate $𝐿_𝑖$  
 Above here is basically the content from the paper Language Generation with Limit.
 
 ## Further concern in practical concerning
