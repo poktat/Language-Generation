@@ -74,7 +74,14 @@ Set 𝐿_𝑧 = 𝐾.
 Enumerated strings by step: 𝑤_1,𝑤_2,…
 𝐿_(𝑖 ) [𝑚] denotes 𝐿_𝑖∩{𝑢_1,𝑢_2,𝑢_3,…𝑢_𝑚}
 An extention definition: A language 𝐿_𝑛 is (𝑡, 𝑚)− critical if 𝐿_𝑛 is consistent with 𝑆_𝑡, and for every language 𝐿_𝑖 ∈ 𝐶_𝑛 such that 𝐿_𝑖 is consistent with St, we have 𝐿_𝑛 [𝑚] ⊆ 𝐿_𝑖 [𝑚].
-𝑚_𝑡^((0))  =max⁡(𝑚_(𝑡−1), 𝑤_𝑡 )
+𝑚_𝑡^((0))  =max⁡(𝑚_(𝑡−1), 𝑤_𝑡 )   
+**Algorithm:** Here’s a simplified description of the algorithm without using mathematical symbols:
+
+1. **Initialize and Iterate**: Start with a counter, m, at its initial value and increase it step by step.
+2. **Increment Counter**: In each iteration, increase m by 1.
+3. **Check Membership**: For each language in the current set, check which strings up to the current m belong to each language.
+4. **Identify Critical Languages**: Determine which languages are critical at this stage based on the membership results.
+5. **Select String**: If there is a string among those checked that belongs to the critical language but hasn't been produced yet, output this string and update the counter to the current value of m. If not, repeat the iteration.
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/alg2.png "Algorithm Part I")
 ![image](https://github.com/poktat/Language-Generation/blob/master/images/alg1.png "Algorithm Part II")
 Figure 1 demonstrates the first five steps of the algorithm from Section 5 with a sample input. Strings u2, u5, u8, u10, and u12 are produced sequentially by the adversary. Each step is shown as a vertical column, and each string considered at some step is displayed as a row. An "X" indicates that string uj belongs to language Li.
