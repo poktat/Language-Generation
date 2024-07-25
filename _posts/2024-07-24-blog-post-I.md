@@ -182,7 +182,18 @@ This output layer with the softmax function is where the probability model resid
 ## Mamba framework--- a new power
 When talking about Mamba, one must mention State Space Models (SSMs).   
 SSMs are a type of deep learning architecture used for sequence modeling. SSMs can be viewed as a combination of Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs), drawing inspiration from classical state space models. SSMs are capable of efficiently handling sequential data with linear or near-linear complexity and can model long-term dependencies in certain data modalities.   
-### SSMs
+### Way from SSMs to mamba
+#### What is a state sapce
+Imagine we are navigating through a maze. Each cell in the diagram represents a position within the maze and contains some implicit information, such as your distance from the exit.
+![SSM](https://i-blog.csdnimg.cn/blog_migrate/6c3bb2af0da547aeafd763f65c63789e.png)
+The aforementioned maze can be simplified and modeled as a 'state space representation'. Each cell shows:
+
+- Your current position (current state)
+- Possible destinations for your next move (possible future states)
+- The actions that will take you to the next state (moving right or left)
+And the variables describing the state (in our example, the X and Y coordinates and the distance to the exit) can be represented as 'state vectors'
+![svect](https://i-blog.csdnimg.cn/blog_migrate/489b064aeeaf7fcf7ec06f58c1303e9a.png)
+
 Now, let's take a look at the structure of SSMs.
 ![mamba](https://i-blog.csdnimg.cn/blog_migrate/b3fffed417caa755ed6b506eb12ebd84.png)   
 Overview of SSMs: A structured SSM independently maps each channel of the input \( x \) (e.g., \( D = 5 \)) through a higher-dimensional latent state \( h \) (e.g., \( N = 4 \)) to output \( y \). Previous SSMs avoided implementing such large effective states (\( DN \), multiplied by batch size \( B \) and sequence length \( L \)) by using clever alternative computational paths that require time invariance: the parameters (\( \Delta, \mathbf{A}, \mathbf{B}, \mathbf{C} \)) are constant over time. Our selection mechanism adds input-dependent dynamics, which also necessitates a carefully designed hardware-aware algorithm to realize the expanded state at more efficient levels within the GPU memory hierarchy.
