@@ -184,7 +184,7 @@ When talking about Mamba, one must mention State Space Models (SSMs).
 SSMs are a type of deep learning architecture used for sequence modeling. SSMs can be viewed as a combination of Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs), drawing inspiration from classical state space models. SSMs are capable of efficiently handling sequential data with linear or near-linear complexity and can model long-term dependencies in certain data modalities.   
 ### SSMs
 Now, let's take a look at the structure of SSMs.
-![mamba]([https://img-blog.csdnimg.cn/direct/e762176678fd49c7a99b7ad49602313c.png](https://i-blog.csdnimg.cn/blog_migrate/b3fffed417caa755ed6b506eb12ebd84.png))   
+![mamba](https://i-blog.csdnimg.cn/blog_migrate/b3fffed417caa755ed6b506eb12ebd84.png)   
 Overview of SSMs: A structured SSM independently maps each channel of the input \( x \) (e.g., \( D = 5 \)) through a higher-dimensional latent state \( h \) (e.g., \( N = 4 \)) to output \( y \). Previous SSMs avoided implementing such large effective states (\( DN \), multiplied by batch size \( B \) and sequence length \( L \)) by using clever alternative computational paths that require time invariance: the parameters (\( \Delta, \mathbf{A}, \mathbf{B}, \mathbf{C} \)) are constant over time. Our selection mechanism adds input-dependent dynamics, which also necessitates a carefully designed hardware-aware algorithm to realize the expanded state at more efficient levels within the GPU memory hierarchy.
 
 ### Mamba
