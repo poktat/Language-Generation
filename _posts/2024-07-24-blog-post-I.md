@@ -192,7 +192,7 @@ Our simplified block design combines the foundational H3 block from most SSM arc
 𝜎, we use the SiLU/Swish activation
 ![mamba2](https://img-blog.csdnimg.cn/direct/42661178d40b41fdab6582f2daa47798.png)
 ### Comparision
-![mt.png](https://i.postimg.cc/pXMYF5Qq/mt.png)](https://postimg.cc/nMTD8zPD)
+![mt.png](https://i.postimg.cc/pXMYF5Qq/mt.png)
 
 
 
