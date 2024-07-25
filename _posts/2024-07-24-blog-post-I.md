@@ -177,10 +177,22 @@ The logits are then passed through a softmax function to convert them into proba
 
 **Generation:** During inference, the probabilities are used to generate tokens. Techniques like greedy decoding, beam search, or sampling can be employed to generate the final sequence from these probabilities.
 
-This output layer with the softmax function is where the probability model resides, providing a probabilistic interpretation of the model's predictions.
+This output layer with the softmax function is where the probability model resides, providing a probabilistic interpretation of the model's predictions.   
 
+## Mamba framework--- a new power
+When talking about Mamba, one must mention State Space Models (SSMs).   
+SSMs are a type of deep learning architecture used for sequence modeling. SSMs can be viewed as a combination of Recurrent Neural Networks (RNNs) and Convolutional Neural Networks (CNNs), drawing inspiration from classical state space models. SSMs are capable of efficiently handling sequential data with linear or near-linear complexity and can model long-term dependencies in certain data modalities.   
+### SSMs
+Now, let's take a look at the structure of SSMs.
+![mamba](https://img-blog.csdnimg.cn/direct/e762176678fd49c7a99b7ad49602313c.png)   
+Overview of SSMs: A structured SSM independently maps each channel of the input \( x \) (e.g., \( D = 5 \)) through a higher-dimensional latent state \( h \) (e.g., \( N = 4 \)) to output \( y \). Previous SSMs avoided implementing such large effective states (\( DN \), multiplied by batch size \( B \) and sequence length \( L \)) by using clever alternative computational paths that require time invariance: the parameters (\( \Delta, \mathbf{A}, \mathbf{B}, \mathbf{C} \)) are constant over time. Our selection mechanism adds input-dependent dynamics, which also necessitates a carefully designed hardware-aware algorithm to realize the expanded state at more efficient levels within the GPU memory hierarchy.
 
-
+### Mamba
+Our simplified block design combines the foundational H3 block from most SSM architectures with the ubiquitous MLP block from modern neural networks. Instead of interleaving these two blocks, we simply and uniformly repeat the Mamba block. Compared to the H3 block, Mamba replaces the first multiplicative gate with an activation function. Compared to the MLP block, Mamba adds an SSM in the main branch. For 
+𝜎, we use the SiLU/Swish activation
+![mamba2](https://img-blog.csdnimg.cn/direct/42661178d40b41fdab6582f2daa47798.png)
+### Comparision
+[![mt.png](https://i.postimg.cc/pXMYF5Qq/mt.png)](https://postimg.cc/nMTD8zPD)
 
 
 
