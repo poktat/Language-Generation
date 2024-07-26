@@ -195,7 +195,9 @@ And the variables describing the state (in our example, the X and Y coordinates 
 [![statevec.png](https://i.postimg.cc/gJYcrdj4/statevec.png)](https://postimg.cc/hJ5R3k97)
 
 Now, let's take a look at the structure of SSMs.
-[![ssm.png](https://i.postimg.cc/Fzz9gZjL/ssm.png)](https://postimg.cc/BPW9J27S)   
+[![ssm.png](https://i.postimg.cc/Fzz9gZjL/ssm.png)](https://postimg.cc/BPW9J27S) 
+Written in term of equations and series data:
+[![eq.png](https://i.postimg.cc/4NrJVpnY/eq.png)](https://postimg.cc/crByNgRW)
 Overview of SSMs: A structured SSM independently maps each channel of the input \( x \) (e.g., \( D = 5 \)) through a higher-dimensional latent state \( h \) (e.g., \( N = 4 \)) to output \( y \). Previous SSMs avoided implementing such large effective states (\( DN \), multiplied by batch size \( B \) and sequence length \( L \)) by using clever alternative computational paths that require time invariance: the parameters (\( \Delta, \mathbf{A}, \mathbf{B}, \mathbf{C} \)) are constant over time. Our selection mechanism adds input-dependent dynamics, which also necessitates a carefully designed hardware-aware algorithm to realize the expanded state at more efficient levels within the GPU memory hierarchy.
 
 ### Mamba
