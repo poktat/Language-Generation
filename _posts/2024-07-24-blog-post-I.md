@@ -185,7 +185,7 @@ SSMs are a type of deep learning architecture used for sequence modeling. SSMs c
 ### Way from SSMs to mamba
 #### What is a state sapce
 Imagine we are navigating through a maze. Each cell in the diagram represents a position within the maze and contains some implicit information, such as your distance from the exit.
-![SSM](https://i-blog.csdnimg.cn/blog_migrate/6c3bb2af0da547aeafd763f65c63789e.png)
+[![statespace.png](https://i.postimg.cc/50Pz2XPx/statespace.png)](https://postimg.cc/N9HFNjqV)
 The aforementioned maze can be simplified and modeled as a 'state space representation'. Each cell shows:
 
 - Your current position (current state)
