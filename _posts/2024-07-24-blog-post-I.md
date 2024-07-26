@@ -192,10 +192,10 @@ The aforementioned maze can be simplified and modeled as a 'state space represen
 - Possible destinations for your next move (possible future states)
 - The actions that will take you to the next state (moving right or left)
 And the variables describing the state (in our example, the X and Y coordinates and the distance to the exit) can be represented as 'state vectors'
-![svect](https://i-blog.csdnimg.cn/blog_migrate/489b064aeeaf7fcf7ec06f58c1303e9a.png)
+[![statevec.png](https://i.postimg.cc/gJYcrdj4/statevec.png)](https://postimg.cc/hJ5R3k97)
 
 Now, let's take a look at the structure of SSMs.
-![mamba](https://i-blog.csdnimg.cn/blog_migrate/b3fffed417caa755ed6b506eb12ebd84.png)   
+[![ssm.png](https://i.postimg.cc/Fzz9gZjL/ssm.png)](https://postimg.cc/BPW9J27S)   
 Overview of SSMs: A structured SSM independently maps each channel of the input \( x \) (e.g., \( D = 5 \)) through a higher-dimensional latent state \( h \) (e.g., \( N = 4 \)) to output \( y \). Previous SSMs avoided implementing such large effective states (\( DN \), multiplied by batch size \( B \) and sequence length \( L \)) by using clever alternative computational paths that require time invariance: the parameters (\( \Delta, \mathbf{A}, \mathbf{B}, \mathbf{C} \)) are constant over time. Our selection mechanism adds input-dependent dynamics, which also necessitates a carefully designed hardware-aware algorithm to realize the expanded state at more efficient levels within the GPU memory hierarchy.
 
 ### Mamba
