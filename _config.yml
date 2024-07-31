@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Song's Blog?"
+title                    : "Song's Blog"
 title_separator          : "-"
 name                     : &name "Zhiyuan Song"
 description              : &description "Talks developed from the paper Language Generation with Limit"
