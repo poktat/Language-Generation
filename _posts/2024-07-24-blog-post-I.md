@@ -17,7 +17,7 @@ A countable infinite collection of possible language candidates 𝐿_1,𝐿_2,�
 𝑈 denotes the set of all possible elements.  
 Each 𝐿_𝑖 contains infinite elements from 𝑈.  
 𝐾 = 𝐿_𝑖 is the true language.  
-The framework allows us to do membership query for 𝐿_𝑖 but not for 𝐾. 
+The framework allows us to do membership query for $𝐿_𝑖$ but not for 𝐾. 
 In another word, the research here is kind  of a set theory game.
 
 ### Example of arithmetic progression on integers:
