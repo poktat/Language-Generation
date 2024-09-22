@@ -213,9 +213,24 @@ Our simplified block design combines the foundational H3 block from most SSM arc
 ### Comparision of mamba and transformers
 ![mt.png](https://i.postimg.cc/pXMYF5Qq/mt.png)
 
+## Mix of the advantages of them
 
+### Inspiration 1: Integration of Dynamic and Parallel Computation
+Mamba's dynamic computation graph allows flexible adjustments based on input data, while the Transformer excels in parallel processing of sequences with self-attention mechanisms. A hybrid model can combine these strengths by integrating Mamba's dynamic computation into the Transformer architecture, enabling more efficient and adaptive processing of different inputs.
 
+**Potential Implementation**: In each layer of the Transformer's self-attention mechanism, Mamba’s dynamic computation module can be embedded. This would allow the attention heads to adjust their weight distributions based on input sequence characteristics, reducing unnecessary computations and improving efficiency.
 
+### Inspiration 2: Hierarchical Multi-Head Attention
+The Transformer relies on multi-head self-attention to capture multi-level dependencies within sequences. Mamba’s graph structure can enhance this by making the attention heads more hierarchical, allowing them to interpret input data with varying levels of abstraction. This could improve the model's ability to capture complex relationships in the input.
+
+**Potential Implementation**: In the Transformer's multi-head attention mechanism, Mamba’s graph computation structure can be embedded. This would allow each attention head to not only understand the sequence at the same level but also analyze cross-level dependencies using graph-based connections.
+
+### Inspiration 3: Unification of Heterogeneous Computation and Data Processing
+Mamba's flexible computation capabilities are ideal for handling different types of data and tasks, while the Transformer’s generality makes it effective across multiple domains. By combining Mamba's heterogeneous computation with the Transformer’s multi-task learning capabilities, a model can be designed to handle both structured and unstructured data efficiently.
+
+**Potential Implementation**: Mamba’s heterogeneous computation units can be added to the Transformer’s encoder-decoder structure, enabling dynamic preprocessing and adjustment based on the type of input data (text, images, time-series, etc.). This would allow the Transformer to handle heterogeneous data more efficiently.
+
+This hybrid structure could enhance model flexibility, improve computational efficiency, and better manage complex tasks, making it particularly useful in scenarios that require dynamic computation paths or multi-modal data handling.
 
 
 
